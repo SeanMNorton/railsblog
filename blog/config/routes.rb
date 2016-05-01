@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   end
   # Sets home/root or '/' path to '/posts'
   root "posts#index"
+
+  get '/about', to: 'pages#about'
 end
