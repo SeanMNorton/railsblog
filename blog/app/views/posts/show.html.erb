@@ -2,6 +2,7 @@
   <h1 class="title"> <%=  @post.title %> </h1>
 
   <p class="date">
+    <!-- Dope ass method that figures the distance in time and puts it to words  -->
     Submitted <%= time_ago_in_words(@post.created_at) %> Ago
   </p>
 

@@ -1,7 +1,21 @@
 <div id="page_wrapper">
   <h1>New Posts</h1>
-
+<!-- Rails way to create a form Google this too maybe give railsy talk  -->
   <%= form_for :post, url: posts_path do |f| %>
+<!-- Checks if and errors occur on this post -->
+  <% if @post.errors.any? %>
+    <div id="errors">
+    <!-- Pluralize will make a word plurl if number provided is above one -->
+      <h2><%= pluralize(@post.errors.count, 'screw up') %> prevented this post from saving</h2>
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%=msg%></li>
+        <%end%>
+      </ul>
+    </div>
+  <%end%>
+
+<!-- The meat of the form starts here the rails way -->
     <p>
       <%= f.label :title %><br>
       <%= f.text_field :title %>

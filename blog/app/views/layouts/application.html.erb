@@ -10,9 +10,12 @@
 <body>
   <div id="sidebar">
     <div id="logo">
+      <!-- Sets up link to root_path set up in routes.rb sets link on img-->
+      <%= link_to image_tag('logo.svg'), root_path %>
+      <!-- Another way to write this...
       <%= link_to root_path do %>
-      <%= image_tag "logo.svg" %>
-      <% end %>
+        <%= image_tag "logo.svg" %>
+      <% end %> -->
     </div>
 
     <ul>

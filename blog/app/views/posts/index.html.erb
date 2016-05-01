@@ -1,7 +1,9 @@
 <% @posts.each do |post| %>
 
 <div class="post_wrapper">
+  <!-- Creates href on post.title and takes you to that posts page post/:id -->
   <h2 class="title"> <%= link_to post.title, post %> </h2>
+  <!-- Another cool date method, turns date to readable string. -->
   <p class="date"> <%= post.created_at.strftime("%B, %d, %Y") %> </p>
 </div>
 
