@@ -32,8 +32,9 @@
       <li><a href="https://github.com/SeanMNorton/">Github</a></li>
       <li><a href="mailto:Norton.Sean.M@gmail.com">Email</a></li>
     </ul>
-
+    <% if !user_signed_in? %>
     <p class="sign_in">Admin Login</p>
+    <% end %>
   </div>
 
   <div id="main_content">
@@ -44,17 +45,19 @@
         <p>About</p>
       <% else %>
         <%= link_to "Back to All Posts", root_path %>
-      <%end%>
+      <% end %>
 
-      <div class="buttons">
-        <button class="button"><%= link_to "New Post", new_post_path %></button>
-        <button class="button">Logout</button>
-      </div>
+      <% if user_signed_in? %>
+        <div class="buttons">
+          <button class="button"><%= link_to "New Post", new_post_path %></button>
+          <button class="button">Logout</button>
+        </div>
+      <% end %>
     </div>
-
+<!-- Tells devise where to throw messages devise magic! -->
     <% flash.each do |name, msg| %>
     <%= content_tag(:div, msg, class: 'alert') %>
-    <%end%>
+    <% end %>
 
     <%= yield %>
   </div>

@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  # Uses devise to check if user is signed in unless they're on posts show/index pages
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     # Orders all posts from newest to oldest created
@@ -6,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    # Keeps new post info for rendering post if errors
+    # Keeps the new post info; for rendering post if errors check create method
     @post = Post.new
   end
 
