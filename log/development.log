@@ -7056,3 +7056,358 @@ Processing by PostsController#index as HTML
   Rendered posts/index.html.erb within layouts/application (1.0ms)
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:42:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 186ms (Views: 169.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/application.self-1c17d2b313ca2ca7214edf6174b4e91cb950fde411f3a94caac29863cd383ef3.css?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:42:40 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:42:41 -0500
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 21:42:42 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (3.1ms)
+  Rendered comments/_form.html.erb (22.0ms)
+  Rendered posts/show.html.erb within layouts/application (66.9ms)
+Completed 200 OK in 101ms (Views: 95.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:42:45 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:42:51 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 21:42:51 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (1.4ms)
+  Rendered posts/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 21:43:49 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (1.2ms)
+  Rendered comments/_form.html.erb (2.2ms)
+  Rendered posts/show.html.erb within layouts/application (9.4ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2893803834651150772_70357479940500 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2893803834651150772_70357479940500 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 117ms (Views: 115.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/application.self-59beb1ecd1036097e4c08b3780bae102844d2cdd81a97fab864baccb9d1fa844.css?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:43:49 -0500
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 21:44:05 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (1.3ms)
+  Rendered posts/show.html.erb within layouts/application (5.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2893803834651150772_70357479940500 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2893803834651150772_70357479940500 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/application.self-3904e3005d8042933fef33ee0a701b5c717c1964b79f9e9f9f40b7aa86981eed.css?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:44:05 -0500
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 21:49:23 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.3ms)
+  Rendered comments/_form.html.erb (1.4ms)
+  Rendered posts/show.html.erb within layouts/application (5.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2893803834651150772_70357479940500 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2893803834651150772_70357479940500 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/application.self-baf0cd61e79e0c5309e6530de1f9f6dd2f1b734b9e97d947320071b7548de264.css?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:49:23 -0500
+
+
+Started GET "/posts/1/edit" for ::1 at 2016-05-01 21:49:24 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/1" for ::1 at 2016-05-01 21:49:39 -0500
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xe06CT9nWLiX3gKv4cnF2AK5uQfY2sCA+cWUHjd/OdHPsVhVbB9dfQ3gDOus5E1xc09UVxCTlrrfBZMcAi05VQ==", "post"=>{"title"=>"This is a post", "body"=>"<a href=\"\">Tumblr distillery tattooed taxidermy. Forage pinterest man bun, pork belly cronut cold-pressed plaid neutra single-origin coffee offal fashion axe. Next level pinterest affogato, meditation etsy chia stumptown direct trade cold-pressed kitsch waistcoat flannel. Messenger bag brunch master cleanse quinoa fingerstache cliche. Bitters pinterest messenger bag, yr neutra quinoa VHS mixtape microdosing lumbersexual bushwick biodiesel deep v. Quinoa pickled raw denim bitters master cleanse iPhone. Biodiesel forage farm-to-table stumptown.</a>\r\n\r\nFixie cornhole portland cold-pressed normcore brooklyn bicycle rights echo park 3 wolf moon, VHS meggings knausgaard. Kickstarter williamsburg viral narwhal kale chips squid. Chillwave ramps disrupt viral, 3 wolf moon schlitz skateboard. Food truck fingerstache typewriter, swag synth fanny pack umami quinoa selvage chartreuse kinfolk humblebrag. +1 selfies williamsburg gluten-free man braid, crucifix scenester kinfolk four loko squid meh cliche. Actually yuccie mumblecore, cliche wolf everyday carry tousled squid. DIY fingerstache skateboard pabst shabby chic.\r\n\r\nCred flannel waistcoat +1 small batch. Cardigan fingerstache VHS tacos, polaroid brooklyn food truck normcore lumbersexual austin kinfolk mlkshk trust fund. Meditation asymmetrical ramps swag butcher umami. Hella plaid distillery, tattooed cardigan echo park waistcoat jean shorts cliche chia godard post-ironic. Beard tumblr master cleanse, squid scenester heirloom banh mi lo-fi 90's twee wayfarers kogi pitchfork typewriter. Actually try-hard polaroid typewriter blog, gluten-free portland. Ennui yr asymmetrical wayfarers, austin shoreditch chicharrones fap brunch microdosing 90's small batch cred."}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3  [["body", "<a href=\"\">Tumblr distillery tattooed taxidermy. Forage pinterest man bun, pork belly cronut cold-pressed plaid neutra single-origin coffee offal fashion axe. Next level pinterest affogato, meditation etsy chia stumptown direct trade cold-pressed kitsch waistcoat flannel. Messenger bag brunch master cleanse quinoa fingerstache cliche. Bitters pinterest messenger bag, yr neutra quinoa VHS mixtape microdosing lumbersexual bushwick biodiesel deep v. Quinoa pickled raw denim bitters master cleanse iPhone. Biodiesel forage farm-to-table stumptown.</a>\r\n\r\nFixie cornhole portland cold-pressed normcore brooklyn bicycle rights echo park 3 wolf moon, VHS meggings knausgaard. Kickstarter williamsburg viral narwhal kale chips squid. Chillwave ramps disrupt viral, 3 wolf moon schlitz skateboard. Food truck fingerstache typewriter, swag synth fanny pack umami quinoa selvage chartreuse kinfolk humblebrag. +1 selfies williamsburg gluten-free man braid, crucifix scenester kinfolk four loko squid meh cliche. Actually yuccie mumblecore, cliche wolf everyday carry tousled squid. DIY fingerstache skateboard pabst shabby chic.\r\n\r\nCred flannel waistcoat +1 small batch. Cardigan fingerstache VHS tacos, polaroid brooklyn food truck normcore lumbersexual austin kinfolk mlkshk trust fund. Meditation asymmetrical ramps swag butcher umami. Hella plaid distillery, tattooed cardigan echo park waistcoat jean shorts cliche chia godard post-ironic. Beard tumblr master cleanse, squid scenester heirloom banh mi lo-fi 90's twee wayfarers kogi pitchfork typewriter. Actually try-hard polaroid typewriter blog, gluten-free portland. Ennui yr asymmetrical wayfarers, austin shoreditch chicharrones fap brunch microdosing 90's small batch cred."], ["updated_at", "2016-05-02 02:49:39.891810"], ["id", 1]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 12ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 21:49:39 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (1.2ms)
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-05-01 21:50:06 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (1.7ms)
+  Rendered posts/show.html.erb within layouts/application (6.9ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2893803834651150772_70357479940500 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___2893803834651150772_70357479940500 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 98ms (Views: 95.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/application.self-953af630156c85396b16cf2772bef9f37c775d43b170386933eccf5aa102a5b7.css?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:50:06 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:50:07 -0500
