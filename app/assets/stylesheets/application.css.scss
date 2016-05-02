@@ -18,7 +18,8 @@
 
 html, body {
 	// font-family: 'Raleway', sans-serif;
-	font-family: 'Montserrat', sans-serif;
+	// font-family: 'Montserrat', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -159,10 +160,14 @@ a {
 		.body {
 			font-size: 1.1em;
 			line-height: 1.75;
+			font-weight: lighter;
 		}
-		.date_and_author {
+		.date {
 			color: #9eafba;
 			margin: .5em 0 2em 0;
+			a:hover {
+				color: #33acb7;
+			}
 		}
 		#comments {
 			h2 {
@@ -188,12 +193,15 @@ a {
 						margin: 1em 0 0 0;
 						font-size: 0.7em;
 						text-transform: uppercase;
+						color: #33acb7
 					}
 					.comment_body {
-						font-size: 1.2em;
+						font-size: 1.1em;
+						font-weight: lighter;
 						margin: 0.2em 0 0 0;
 					}
 					.comment_time {
+						color: #9eafba;
 						margin-top: 1.2em;
 						font-size: .8em;
 					}
