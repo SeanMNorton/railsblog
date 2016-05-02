@@ -5725,3 +5725,449 @@ Started GET "/about" for ::1 at 2016-05-01 20:56:56 -0500
 Processing by PagesController#about as HTML
   Rendered pages/about.html.erb within layouts/application (1.2ms)
 Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:03:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 242ms (Views: 227.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:03:58 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:04:03 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:04:03 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:05:31 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:05:31 -0500
+
+
+Started GET "/assets/application.self-5280a628e2a84b6d138cb99de63c96db44d9f4a1b7eadc5b6aa966075625bb6c.css?body=1" for ::1 at 2016-05-01 21:05:31 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:05:31 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:05:31 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:05:32 -0500
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:07:45 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589801400 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589801400 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 93ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:07:45 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:07:45 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/application.self-53e5f6c4d662cfff36e4842f2b1caf739e5f9383a0869835365468b058de377b.css?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:07:46 -0500
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:07:50 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:07:51 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:07:53 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:07:56 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:08:08 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589801400 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589801400 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/application.self-5643b08bb0f715a35d6e69f585eca4954630fd62c8acf42d21d5cc62343d4bb6.css?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:08:09 -0500
+
+
+Started GET "/" for ::1 at 2016-05-01 21:08:10 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:08:11 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:08:13 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:08:17 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/application.self-5280a628e2a84b6d138cb99de63c96db44d9f4a1b7eadc5b6aa966075625bb6c.css?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:08:17 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:08:18 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:08:18 -0500
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:08:19 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:08:27 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589801400 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589801400 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 73ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/application.self-e516de5a30852fb84e02224f50251d99543287019cfb9c5eb7e04682960f8265.css?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:08:27 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:08:28 -0500
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:09:26 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589801400 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589801400 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 76ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/application.self-1283536fa0c1884e6d1224ddcb0425ddcfa155fb1d348adb041eba482b25104e.css?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:09:26 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:09:27 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:09:27 -0500
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:09:28 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:09:29 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-05-01 21:11:20 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589685720 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+DEPRECATION WARNING: Extra .css in SCSS file is unnecessary. Rename /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.css.scss to /Users/DBC/RailsBlog/railsblog/app/assets/stylesheets/_normalize.scss. (called from _app_views_layouts_application_html_erb___4005292386157228085_70339589685720 at /Users/DBC/RailsBlog/railsblog/app/views/layouts/application.html.erb:5)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/_normalize.self-b8111a7e611441633054d345c672af936479bb996f6b8821ed37ed10630af098.css?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/application.self-27e92f33cb154798fe0f1906fdc2382ae40aa79f99413ae0747a8dac6aecaa91.css?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-01 21:11:20 -0500
+
+
+Started GET "/assets/logo-16104ae3cc3c4fd48f42733ea2b8a16cc52aaf3284d20ce0b76b62df3192c41c.svg" for ::1 at 2016-05-01 21:11:21 -0500
+
+
+Started GET "/assets/logo-a534341857b2f0216834ac3b6101ed3f05bcc55391ce7897e08c1badfc309189.png" for ::1 at 2016-05-01 21:11:21 -0500
+
+
+Started GET "/about" for ::1 at 2016-05-01 21:11:23 -0500
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 25.8ms | ActiveRecord: 0.0ms)
